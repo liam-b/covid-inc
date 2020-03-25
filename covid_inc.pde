@@ -22,14 +22,12 @@ void settings() {
 }
 
 void setup() {
-  //surface.setResizable(true);
+  surface.setTitle("COVID Inc.");
   cp5 = new ControlP5(this);
   diseaseMenu = createDiseaseMenu();
   deathTally = cp5.addTextlabel("deaths")
     .setText("Deaths:")
     .setPosition(16, height - 110);
-    //.setColorValue(0xffffff00);
-    //.setFont(createFont("Georgia",20));
   
   reset(new Disease(800, 0.1, 1, 7, 350, 1, 1, 1, 0.8, 0.1));
 }

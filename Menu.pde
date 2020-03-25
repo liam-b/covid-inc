@@ -1,15 +1,19 @@
 Group createDiseaseMenu() {
   Group diseaseMenu = cp5.addGroup("diseaseMenu")
-    .setPosition(width/2 - width/2/2, height/2 - height/1.5/2)
+    .setPosition(width/2 - width/2/2, height/2 - height/1.8/2)
     .setWidth(width/2)
     .activateEvent(true)
     .setBackgroundColor(color(25))
-    .setBackgroundHeight((int)(height/1.5))
-    .hideBar();
+    .setBackgroundHeight((int)(height/1.8))
+    .setTitle("COVID Inc.")
+    .disableCollapse();
+    //.hideBar();
+    
+   //diseaseMenu.getCaptionLabel().setPadding(10, 10);
     
   int diseaseMenuSliderWidth = (int)(diseaseMenu.getWidth()/1.7);
 
-  ControlFont bigFont = new ControlFont(createFont("Arial", 25, true));
+  ControlFont bigFont = new ControlFont(createFont("Arial", 20, true));
   
   cp5.addTextfield("   population")
     .setGroup(diseaseMenu)
